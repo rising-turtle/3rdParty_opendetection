@@ -55,7 +55,8 @@ int main(int argc, char *argv[])
   //set commandline options type inputs
   // detector->parseParameterString("--use_gpu --fast --method=1 --error=2 --confidence=0.9 --iterations=500 --inliers=20 --metainfo");
   detector->parseParameterString("--fast --method=1 --error=2 --confidence=0.9 --iterations=500 --inliers=20 --metainfo");
-  detector->setCameraIntrinsicFile("image_local_scenes/camera_webcam_fixed.xml");   //set some other inputs
+  // detector->setCameraIntrinsicFile("image_local_scenes/camera_webcam_fixed.xml");   //set some other inputs
+  detector->setCameraIntrinsicFile("../../../config/webcam.xml");   //set some other inputs
   detector->init();
   cout <<"od_image_cadrecog_camera.cpp: after initialization!"<<endl; 
 
